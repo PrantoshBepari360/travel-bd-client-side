@@ -40,7 +40,3 @@ const AllOrders = () => {
 };
 
 export default AllOrders;
-
-{
-  /* <Orders key={order._id}order={order}></Orders> */
-}
