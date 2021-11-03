@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Login/Login/Login";
 import PrivetRoute from "./pages/Login/PrivetRoute/PrivetRoute";
 import ManegService from "./pages/ManegService/ManegService";
+import MyOrders from "./pages/MyOrders/MyOrders";
 import OrderReview from "./pages/OrderReview/OrderReview";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Footer from "./pages/Share/Footer/Footer";
@@ -44,6 +45,9 @@ function App() {
             </Route>
             <Route path="/allorders">
               <AllOrders></AllOrders>
+            </Route>
+            <Route path="/myorders">
+              <MyOrders></MyOrders>
             </Route>
             <PrivetRoute path="/orderReview">
               <OrderReview></OrderReview>
