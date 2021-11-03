@@ -16,10 +16,10 @@ const AllOrders = () => {
       });
   }, []);
 
-  const {isLoading } = useAuth();
+  const { isLoading } = useAuth();
   if (isLoading) {
-    return <Spinner animation="border" variant="danger" />
-}
+    return <Spinner animation="border" variant="danger" />;
+  }
 
   return (
     <div>
@@ -33,7 +33,7 @@ const AllOrders = () => {
               <h3>City: {order.city}</h3>
               <h3>Address: {order.address}</h3>
               <h3>Phone: {order.phone}</h3>
-              <h3>Id: {order._id}</h3>
+              <h3>Order Time & date: {order.createdAt}</h3>
               <Orders order={order?.order}></Orders>
             </div>
           </div>

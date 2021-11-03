@@ -15,7 +15,7 @@ const Travel = (props) => {
           <Link to={"/"}>
             <button
               onClick={() => props.handelAddToCart(props.travel)}
-              className="btn btn-primary me-3"
+              className="btn btn-primary m-3"
             >
               By Now
             </button>

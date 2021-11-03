@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import useCart from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducts";
 import OrderPlace from "../Home/OrderPlace/OrderPlace";
@@ -8,7 +7,7 @@ import ReviewItem from "../ReviewItem/ReviewItem";
 import { useHistory } from "react-router";
 
 const OrderReview = () => {
-  const [products, setProducts] = useProducts();
+  const [products] = useProducts();
   const [cart, setCart] = useCart(products);
   const history = useHistory();
 

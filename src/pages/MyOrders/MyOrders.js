@@ -32,7 +32,7 @@ const MyOrders = () => {
             <h3>City: {order.city}</h3>
             <h3>Address: {order.address}</h3>
             <h3>Phone: {order.phone}</h3>
-            <h3>Id: {order._id}</h3>
+            <h3>Order Time & date: {order.createdAt}</h3>
             <Orders order={order?.order}></Orders>
             </div>
           </li>
