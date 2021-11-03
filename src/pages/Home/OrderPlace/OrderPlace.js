@@ -2,7 +2,6 @@ import React from "react";
 
 const OrderPlace = (props) => {
   const { cart } = props;
-  // console.log(cart)
 
   let totalQuantity = 0;
   let total = 0;

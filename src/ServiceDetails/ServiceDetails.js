@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 
 const ServiceDetails = () => {
   const { _id } = useParams();
-  console.log(_id);
   const [service, setService] = useState({});
-  console.log(service);
 
   useEffect(() => {
     fetch(`https://creepy-alien-88782.herokuapp.com/Travels/${_id}`)

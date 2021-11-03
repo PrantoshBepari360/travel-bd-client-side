@@ -56,7 +56,6 @@ const BdTravel = () => {
 
   const handelSearch = (event) => {
     const searchText = event.target.value;
-    console.log(searchText);
     const matchedProducts = travels.filter((travel) =>
       travel.name.toLowerCase().includes(searchText.toLowerCase())
       );

@@ -6,11 +6,9 @@ import "./AddServices.css";
 const AddServices = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
 
     // axios
     axios.post("https://creepy-alien-88782.herokuapp.com/Travels", data).then((res) => {
-      console.log(res);
       if (res.data.insertedId) {
         alert("Added successrully");
         reset();

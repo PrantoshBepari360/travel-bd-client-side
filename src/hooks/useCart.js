@@ -5,9 +5,6 @@ const useCart = (products) => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const saveCart = getStoredBook();
-    const keys = Object.keys(saveCart)
-      console.log(keys)
     if (products.length) {
       const saveCart = getStoredBook();
       const storedCart = [];

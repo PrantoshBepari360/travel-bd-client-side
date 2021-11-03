@@ -5,7 +5,6 @@ import Blog from "../Blog/Blog";
 
 const Blogs = () => {
   const [travels, setTravel] = useState([]);
-  console.log(travels);
 
   useEffect(() => {
     fetch("https://creepy-alien-88782.herokuapp.com/Travels")

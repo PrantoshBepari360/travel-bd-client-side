@@ -7,7 +7,6 @@ import Orders from "./Orders";
 
 const AllOrders = () => {
   const [orders, setOrders] = useState([]);
-  console.log(orders);
 
   useEffect(() => {
     fetch("https://creepy-alien-88782.herokuapp.com/allOrders")

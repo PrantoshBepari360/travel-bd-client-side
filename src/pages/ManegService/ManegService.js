@@ -10,14 +10,12 @@ const ManegService = () => {
   });
 
   const handelDelete = (id) => {
-    console.log(id);
     const url = `https://creepy-alien-88782.herokuapp.com/Travels/${id}`;
     fetch(url, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.deletedCount) {
           alert("seccesfully deleted");
           const remaining = services.filter((service) => service._id !== id);
