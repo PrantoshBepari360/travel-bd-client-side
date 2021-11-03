@@ -1,13 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
-const OrderPlace = () => {
+const OrderPlace = (props) => {
+  const { cart } = props;
+  // console.log(cart)
+
+  let totalQuantity = 0;
+  let total = 0;
+  for (const product of cart) {
+    if (!product.quantity) {
+      product.quantity = 1;
+    }
+    total = total + product.price * product.quantity;
+    totalQuantity = totalQuantity + product.quantity;
+  }
+
   return (
     <div>
-      <h2>Order Place</h2>
-      <Link to="/home">
-        <button class="btn btn-primary mb-3">Go Back</button>
-      </Link>
+      <h1>Travel add Place</h1>
+      <h3>Place ordered: {totalQuantity}</h3>
+      <br />
+      <h4>Total Cost : {total.toFixed(2)}</h4>
+      <h2 className="mt-5">{props.children}</h2>
     </div>
   );
 };

@@ -32,8 +32,8 @@ const ManegService = () => {
       <div className="service-container">
       <div className="row px-5">
       {services.map((service) => (
-        <div className="col-md-6 col-xxl-4">
-        <div className="border border-danger border-2 rounded-3 p-3 mb-3" key={service._id}>
+        <div className="col-md-6 col-xxl-4" key={service._id}>
+        <div className="border border-danger border-2 rounded-3 p-3 mb-3">
           <img className="w-100" src={service.img} alt="" />
           <h3>Name: {service.name}</h3>
           <h3>Price: {service.price}</h3>

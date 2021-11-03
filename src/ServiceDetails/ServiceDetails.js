@@ -29,9 +29,6 @@ const ServiceDetails = () => {
          <Link to="/home">
             <button className="btn btn-primary me-5">Back</button>
           </Link>
-          <Link to="/booking">
-            <button className="btn btn-primary">Book Now</button>
-          </Link>
          </div>
         </div>
       </div>

@@ -33,6 +33,9 @@ const Navigation = () => {
                   <li>
                     <Link to="/allorders">AllOrders</Link>
                   </li>
+                  <li>
+                    <Link to="/orderReview">OrderReview</Link>
+                  </li>
                 </ul>
               ) : (
                 <div></div>

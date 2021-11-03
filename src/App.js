@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Login/Login/Login";
 import PrivetRoute from "./pages/Login/PrivetRoute/PrivetRoute";
 import ManegService from "./pages/ManegService/ManegService";
+import OrderReview from "./pages/OrderReview/OrderReview";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Footer from "./pages/Share/Footer/Footer";
 import Header from "./pages/Share/Header/Header";
@@ -32,9 +33,9 @@ function App() {
             <Route path="/blog">
               <Blogs></Blogs>
             </Route>
-            <PrivetRoute path="/serviceDetails/:_id">
+            <Route path="/serviceDetails/:_id">
               <ServiceDetails></ServiceDetails>
-            </PrivetRoute>
+            </Route>
             <Route path="/addServices">
               <AddServices></AddServices>
             </Route>
@@ -44,6 +45,9 @@ function App() {
             <Route path="/allorders">
               <AllOrders></AllOrders>
             </Route>
+            <PrivetRoute path="/orderReview">
+              <OrderReview></OrderReview>
+            </PrivetRoute>
             <Route path="/booking">
               <BookNow></BookNow>
             </Route>
