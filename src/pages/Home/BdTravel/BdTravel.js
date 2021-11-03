@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 import { addToDb, getStoredBook } from "../../Login/Firebase/Database";
 import OrderPlace from "../OrderPlace/OrderPlace";
 import Travel from "../Travel/Travel";
@@ -60,6 +62,11 @@ const BdTravel = () => {
       );
       setDisplayProduct(matchedProducts);
   };
+
+  const {isLoading } = useAuth();
+  if (isLoading) {
+    return <Spinner animation="border" variant="danger" />
+}
 
   return (
     <div>

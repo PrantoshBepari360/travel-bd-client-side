@@ -1,6 +1,13 @@
 import React from "react";
+import { Spinner } from "react-bootstrap";
+import useAuth from "../../hooks/useAuth";
 
 const Contact = () => {
+  const {isLoading } = useAuth();
+  if (isLoading) {
+    return <Spinner animation="border" variant="danger" />
+}
+
   return (
     <div>
       <h2 className="py-5">Contact</h2>

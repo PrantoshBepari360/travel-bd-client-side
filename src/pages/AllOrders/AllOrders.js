@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
+import useAuth from "../../hooks/useAuth";
 import AddServices from "../AddServices/AddServices";
 import ManegService from "../ManegService/ManegService";
 import Orders from "./Orders";
@@ -14,6 +16,11 @@ const AllOrders = () => {
         setOrders(data);
       });
   }, []);
+
+  const {isLoading } = useAuth();
+  if (isLoading) {
+    return <Spinner animation="border" variant="danger" />
+}
 
   return (
     <div>

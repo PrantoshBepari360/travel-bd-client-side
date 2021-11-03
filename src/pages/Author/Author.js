@@ -1,6 +1,13 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
+import useAuth from '../../hooks/useAuth';
 
 const Author = () => {
+  const {isLoading } = useAuth();
+  if (isLoading) {
+    return <Spinner animation="border" variant="danger" />
+}
+
   return (
     <div>
       <div className="row my-5 w-75 mx-auto">

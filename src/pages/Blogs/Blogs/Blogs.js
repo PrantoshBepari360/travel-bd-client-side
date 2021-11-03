@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
+import useAuth from "../../../hooks/useAuth";
 import Blog from "../Blog/Blog";
 
 const Blogs = () => {
@@ -10,6 +12,11 @@ const Blogs = () => {
       .then((res) => res.json())
       .then((travel) => setTravel(travel));
   }, []);
+
+  const {isLoading } = useAuth();
+  if (isLoading) {
+    return <Spinner animation="border" variant="danger" />
+}
 
   return (
     <div className="px-5">
