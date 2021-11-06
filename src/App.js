@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./Contex/AuthProvider";
-import AddServices from "./pages/AddServices/AddServices";
 import AllOrders from "./pages/AllOrders/AllOrders";
 import Author from "./pages/Author/Author";
 import Blogs from "./pages/Blogs/Blogs/Blogs";
@@ -10,9 +9,7 @@ import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Login/Login/Login";
 import PrivetRoute from "./pages/Login/PrivetRoute/PrivetRoute";
-import ManegService from "./pages/ManegService/ManegService";
 import MyOrders from "./pages/MyOrders/MyOrders";
-import OrderReview from "./pages/OrderReview/OrderReview";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Footer from "./pages/Share/Footer/Footer";
 import Header from "./pages/Share/Header/Header";
@@ -37,24 +34,15 @@ function App() {
             <Route path="/serviceDetails/:_id">
               <ServiceDetails></ServiceDetails>
             </Route>
-            <Route path="/addServices">
-              <AddServices></AddServices>
-            </Route>
-            <Route path="/manegService">
-              <ManegService></ManegService>
-            </Route>
             <Route path="/allorders">
               <AllOrders></AllOrders>
             </Route>
             <Route path="/myorders">
               <MyOrders></MyOrders>
             </Route>
-            <PrivetRoute path="/orderReview">
-              <OrderReview></OrderReview>
-            </PrivetRoute>
-            <Route path="/booking">
+            <PrivetRoute path="/booking">
               <BookNow></BookNow>
-            </Route>
+            </PrivetRoute>
             <Route path="/author">
               <Author></Author>
             </Route>

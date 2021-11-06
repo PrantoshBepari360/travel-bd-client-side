@@ -39,13 +39,6 @@ const Navigation = () => {
               </li>
               <li className="nav-item col-6 col-md-auto m-1">
                 {user?.email ? (
-                  <Link to="/orderReview">OrderReview</Link>
-                ) : (
-                  <div></div>
-                )}
-              </li>
-              <li className="nav-item col-6 col-md-auto m-1">
-                {user?.email ? (
                   <Link to="/myorders">MyOrder</Link>
                 ) : (
                   <div></div>

@@ -2,10 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import { addToDb, getStoredBook } from "../../Login/Firebase/Database";
-import OrderPlace from "../OrderPlace/OrderPlace";
 import Travel from "../Travel/Travel";
 import "./BdTravel.css";
 
@@ -78,7 +76,7 @@ const BdTravel = () => {
         />
       </div>
       <div className="travel-container mt-3">
-        <div className="product-container">
+        <div className="row">
           {displayProduct.map((travel) => (
             <Travel
               key={travel._id}
@@ -86,13 +84,6 @@ const BdTravel = () => {
               handelAddToCart={handelAddToCart}
             ></Travel>
           ))}
-        </div>
-        <div className="cart-container">
-          <OrderPlace cart={cart}>
-              <Link to="/orderReview">
-              <button className="btn btn-primary">Review your order</button>
-              </Link>
-          </OrderPlace>
         </div>
       </div>
     </div>

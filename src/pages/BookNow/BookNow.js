@@ -1,10 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import { clearTheBooking, getStoredBook } from "../Login/Firebase/Database";
 import './BookNow.css';
 
 const BookNow = () => {
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
     const {
         register,
         handleSubmit,
@@ -30,6 +35,7 @@ const BookNow = () => {
                 alert('Order processed successfully')
                 clearTheBooking();
                 reset();
+                history.push(redirect_uri)
             }
         })
     };

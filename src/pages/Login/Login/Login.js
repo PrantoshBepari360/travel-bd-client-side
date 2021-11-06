@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router";
+import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
@@ -68,9 +69,9 @@ const Login = () => {
               </div>
               <h5 className="text-center mt-3">
                 Don’t have an account?
-                <a href="#" className="ms-2">
+                <Link to="/login" className="ms-2">
                   Register
-                </a>
+                </Link>
               </h5>
             </div>
           </div>

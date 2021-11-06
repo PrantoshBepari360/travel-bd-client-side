@@ -24,7 +24,7 @@ const ServiceDetails = () => {
             <h4>Description: {service.description}</h4>
           </div>
          <div className="d-flex justify-content-center">
-         <Link to="/home">
+         <Link to="/blog">
             <button className="btn btn-primary me-5">Back</button>
           </Link>
          </div>
