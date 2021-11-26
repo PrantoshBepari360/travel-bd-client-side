@@ -1,8 +1,8 @@
 # BD TRAVEL
 
-In the project directory client side privet repo link [Bd-Travel](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-PrantoshBepari360)
+In the project directory client side privet repo link [Bd-Travel](https://github.com/PrantoshBepari360/travel-bd-client-side)
 
-In the project directory server side privet repo link [travel-bd](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-PrantoshBepari360)
+In the project directory server side privet repo link [travel-bd](https://github.com/PrantoshBepari360/travel-bd-sarver-side)
 
 In the project directory live side link [bd-travel](https://bd-travel-ba9ce.web.app/)
 
