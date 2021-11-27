@@ -6,12 +6,12 @@ In the project directory server side privet repo link [travel-bd](https://github
 
 In the project directory live side link [bd-travel](https://bd-travel-ba9ce.web.app/)
 
-- Established in 1972, Galaxy Travel International (GTI), the representative of BCD Travel in Bangladesh, was one of the first travel agents in Bangladesh to be accredited by IATA.
+- This project uses backend node.Js, express.js, MongoDB database, and frontend using react.js & materialUi.
 
-- Galaxy Holidays, the tour division of Galaxy Travel Intl. launched in the year of 2002, is one of the leading service providers in the industry for both inbound and outbound tours.
+- Users can signup and log in. Login users add Tourist centers, customize, and manage Tourist centers.
 
-- Read the directions on the product label, patient guide, or medicine guide provided by the medicine company or your pharmacist before starting to use Acetram Tablet.
+- Users sign up using google accounts. This project SignUp process builds Using firebase. 
 
-- The representative of BCD Travel in Bangladesh, was one of the first travel agents in Bangladesh to be accredited by IATA. Established in 1972, Galaxy Travel International.
+- If no user logs in, you will not see the Order and My Orders page. If you log in, you will see the order and space.
 
-- launched in the year of 2002, is one of the leading service providers in the industry for both inbound and outbound tours. Galaxy Holidays, the tour division of Galaxy Travel Intl.
+- A user will be able to search and parse the travels site as per his requirement.
